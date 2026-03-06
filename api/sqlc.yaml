@@ -1,0 +1,12 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "database/queries"
+    schema: "database/schema.sql"
+    # schema: "database/migrations"  Systême de migration pas utile pour le moment, à remettre une fois l'app déployée
+    gen:
+      go:
+        package: "sqlc"
+        out: "database/sqlc"
+        emit_json_tags: true
+        emit_interface: true
