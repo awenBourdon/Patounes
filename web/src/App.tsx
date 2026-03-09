@@ -4,6 +4,7 @@ export function App() {
   return
   <>
     <Navbar />
+    Bonjour test
   </>
 }
 
